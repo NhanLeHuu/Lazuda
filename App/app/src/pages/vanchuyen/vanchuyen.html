@@ -1,0 +1,67 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Đơn Vận Chuyển {{ item.info.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.info.galley[0] + ')'">
+    </div>
+    <ion-item>
+      <ion-label>{{ item.info.name }}</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      <ion-row>
+        <ion-chip>
+          <ion-icon name="bus" color=""></ion-icon>
+          <ion-label>Vận Chuyển Mã Đơn {{ item.madonhang }}</ion-label>
+        </ion-chip>
+      </ion-row>
+      <ion-row><u>Địa chỉ giao hàng</u> {{ item.diachigiaohang }}</ion-row>
+      <ion-row><u>Số lượng</u>: {{ item.soluong }}</ion-row>
+      <ion-row><u>Phương thức thanh toán</u> {{ item.tinhtrangpayment }}</ion-row>
+      <ion-row><u>Trạng thái</u>
+        <p *ngIf="item.tinhtrangpayment == 'Thanh Toán Bằng Thẻ Ngân Hàng'; else payment"> Đã Thanh Toán</p>
+        <ng-template #payment> Chưa Thanh Toán</ng-template>
+      </ion-row>
+      <ion-row><u>Tổng cộng</u> {{ item.tongcong }}</ion-row>
+      <ion-row><u>Phí giao hàng</u> {{ item.phigiaohang }}</ion-row>
+
+      <ion-row *ngIf="result == null">
+        <button slot="start" (click)="presentActionSheet()" ion-button color="danger" fill="solid">
+          Chấp Nhận Đơn
+        </button>
+      </ion-row>
+      <ion-row *ngIf="result != null">
+        <button slot="start" (click)="sendApi()" ion-button color="danger" fill="solid">
+          {{ result }}
+        </button>
+      </ion-row>
+    </ion-card-content>
+    <ion-item>
+      <ion-label>Đơn Vị Vận Chuyển</ion-label>
+      <ion-select (ionChange)="onSelectVC()" [(ngModel)]="getvanchuyen.donvivanchuyen" multiple="true" #modal1>
+        <ion-option *ngFor="let item of donvivanchuyen">{{ item }}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Vị Trí</ion-label>
+      <ion-select (ionChange)="onSelectVT()" [(ngModel)]="getvanchuyen.vitri" multiple="true" #modal2>
+        <ion-option (click)="onSelectVT(item.Title)" *ngFor="let item of thanhpho">{{ item.Title }}</ion-option>
+      </ion-select>
+    </ion-item>
+
+
+  </ion-card>
+  <!-- 
+  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.info.galley[0] + ')'">
+  </div> -->
+
+
+</ion-content>

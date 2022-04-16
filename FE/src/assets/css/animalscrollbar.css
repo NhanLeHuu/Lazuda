@@ -1,0 +1,221 @@
+/* ========== ANIMAL ========== */
+.animal {
+    height          : 80vh;
+    width           : 50px;
+    min-width       : 45px;
+    background-color: #f2e86d;
+    border-radius   : 100px 100px 0 0;
+    margin          : 0 40px;
+    position        : relative;
+    margin          : 0;
+}
+
+.animal:before,
+.animal:after {
+    content         : '';
+    position        : absolute;
+    background-color: inherit;
+    height          : 20px;
+    width           : 20px;
+    border-radius   : 100px;
+    top             : -5px;
+}
+
+.animal:before {
+    left: -5px;
+}
+
+.animal:after {
+    right: -5px;
+}
+
+.animal *,
+.animal *:before,
+.animal *:after {
+    position: absolute;
+}
+
+.animal label {
+    font-family     : sans-serif;
+    display         : block;
+    text-align      : center;
+    width           : 14px;
+    top             : 100px;
+    left            : calc(50% - 7px);
+    word-wrap       : break-word;
+    background-color: transparent;
+    color           : black;
+}
+
+/* ========== MOUSE ========== */
+.animal.mouse {
+    background-color: #c4bcbc;
+    --alt-color     : #efe8e8;
+    --line-color    : #4f3e3e;
+}
+
+.animal.mouse .eye1 {
+    height          : 6px;
+    width           : 6px;
+    background-color: var(--line-color);
+    border-radius   : 100px;
+    top             : 30px;
+    left            : 10px;
+}
+
+.animal.mouse .eye2 {
+    height          : 6px;
+    width           : 6px;
+    background-color: var(--line-color);
+    border-radius   : 100px;
+    top             : 30px;
+    right           : 10px;
+}
+
+.animal.mouse .nose {
+    height          : 4px;
+    width           : 4px;
+    background-color: var(--line-color);
+    top             : 40px;
+    left            : calc(50% - 2px);
+    transform       : rotate(45deg);
+}
+
+.animal.mouse .nose:before {
+    content         : '';
+    height          : 4px;
+    width           : 4px;
+    background-color: inherit;
+    left            : -2px;
+    top             : 0;
+    border-radius   : 100px;
+}
+
+.animal.mouse .nose:after {
+    content         : '';
+    height          : 4px;
+    width           : 4px;
+    background-color: inherit;
+    left            : 0;
+    top             : -2px;
+    border-radius   : 100px;
+}
+
+.animal.mouse .mouth {
+    height: 4px;
+    width : 4px;
+    top   : 0;
+    left  : 0;
+    color : var(--line-color);
+}
+
+.animal.mouse .mouth:before {
+    content    : 'c';
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size  : 14px;
+    top        : -1px;
+    left       : -1px;
+    transform  : rotate(180deg);
+}
+
+.animal.mouse .mouth:after {
+    content    : 'c';
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size  : 14px;
+    top        : -5px;
+    left       : 1px;
+    transform  : rotate(260deg);
+}
+
+.animal.mouse .face {
+    height          : 27px;
+    width           : 12px;
+    background-color: var(--alt-color);
+    border-radius   : 100px;
+    top             : 20px;
+    left            : calc(50% - 6px);
+}
+
+.animal.mouse .face:after {
+    content         : '';
+    height          : 12px;
+    width           : 40px;
+    background-color: inherit;
+    border-radius   : 100px;
+    top             : calc(100% - 5px);
+    left            : -14px;
+}
+
+.animal.mouse .face:before {
+    content         : '';
+    height          : 16px;
+    width           : 16px;
+    background-color: inherit;
+    top             : 15px;
+    left            : -2px;
+    transform       : rotate(45deg);
+}
+
+.animal.mouse .whiskers1 {
+    height          : 2px;
+    width           : 14px;
+    background-color: var(--line-color);
+    top             : 43px;
+    left            : 2px;
+    transform       : rotate(6deg);
+}
+
+.animal.mouse .whiskers1:after {
+    content         : '';
+    height          : inherit;
+    width           : inherit;
+    background-color: inherit;
+    top             : 5px;
+    left            : 0;
+    transform       : rotate(-12deg);
+}
+
+.animal.mouse .whiskers2 {
+    height          : 2px;
+    width           : 14px;
+    background-color: var(--line-color);
+    top             : 43px;
+    right           : 2px;
+    transform       : rotate(-6deg);
+}
+
+.animal.mouse .whiskers2:after {
+    content         : '';
+    height          : inherit;
+    width           : inherit;
+    background-color: inherit;
+    top             : 5px;
+    right           : 0;
+    transform       : rotate(12deg);
+}
+
+.animal.mouse .hand1 {
+    height       : 16px;
+    width        : 8px;
+    top          : 65px;
+    left         : 7px;
+    border       : 2px solid #333;
+    border-bottom: 0;
+    transform    : rotate(110deg);
+    border-radius: 100px 100px 0 0;
+    background   : linear-gradient(to top, transparent, transparent 50%, var(--alt-color) 50%);
+}
+
+.animal.mouse .hand2 {
+    height       : 16px;
+    width        : 8px;
+    top          : 65px;
+    right        : 7px;
+    border       : 2px solid #333;
+    border-bottom: 0;
+    transform    : rotate(-110deg);
+    border-radius: 100px 100px 0 0;
+    background   : linear-gradient(to top, transparent, transparent 50%, var(--alt-color) 50%);
+}

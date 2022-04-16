@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- FB -->
+    <!-- <meta property="fb:app_id" content="102143277123049" />
+    <meta property="og:url" content="https://www.kapwing.com/meme-generator" />
+    <meta property="og:title" content="Meme Generator — Make a Meme Online — Kapwing" />
+    <meta property="og:description" content="..." />
+    <meta property="og:image" content="https://cdn.kapwing.com/static/og-image.png" />
+    <meta property="og:image:url" content="https://cdn.kapwing.com/static/og-image.png" />
+    <meta property="twitter:image" content="https://cdn.kapwing.com/static/og-image.png" /> -->
+    <!-- FB -->
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json"> -->
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/png" href="./logo.png" />
+    <!--====== Vendor Css ======-->
+    <!-- <link rel="stylesheet" href="css/vendor.css"> -->
+
+    <!--====== Utility-Spacing ======-->
+    <!-- <link rel="stylesheet" href="css/utility.css"> -->
+    <!--====== App ======-->
+    <!-- <link rel="stylesheet" href="css/app.css"> -->
+</head>
+
+<body v-scrollbar id="js-scrollspy-trigger">
+    <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+    <!-- <script type="text/javascript" src="js/jquery.slicebox.js"></script> -->
+    <div id="app"></div>
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!--====== Vendor Js ======-->
+    <script src="js/vendor.js"></script>
+
+    <!--====== jQuery Shopnav plugin ======-->
+    <!-- <script src="js/jquery.shopnav.js"></script> -->
+
+    <!--====== App ======-->
+    <script src="https://kit.fontawesome.com/7870609b4d.js" crossorigin="anonymous"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=342810913037728&autoLogAppEvents=1" nonce="9JITS4dr"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <!-- built files will be auto injected -->
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!--
+  Generated template for the TrahangPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Trả Hàng</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of product">
+      <button ion-item (click)="openItem(item)">
+        <ion-card class="wrapp" item-start>
+          <img class="img" [src]="item.info.galley[0]" />
+        </ion-card>
+        <p>Đơn Trả</p>
+        <p>{{ item.info.name }}</p>
+        <p>{{ item.ngaydathang }}</p>
+        <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
+      </button>
+
+      <ion-item-options>
+        <button ion-button color="danger" (click)="deleteItem(item)">
+          Trả Hàng
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

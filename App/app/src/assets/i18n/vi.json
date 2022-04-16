@@ -1,0 +1,68 @@
+{
+    "BACK_BUTTON_TEXT": "Trở lại",
+  
+    "NAME": "Tên",
+    "EMAIL": "Email",
+    "USERNAME": "tài khoản",
+    "PASSWORD": "Mật khẩu",
+    "LOGIN": "Đăng nhập",
+    "SIGNUP": "Đăng ký",
+  
+    "TAB1_TITLE": "Đóng Gói Đơn Hàng",
+    "TAB2_TITLE": "Vận Chuyển Hàng",
+    "TAB3_TITLE": "Giao Hàng",
+  
+    "MAP_TITLE": "Map",
+  
+    "TUTORIAL_SKIP_BUTTON": "Bỏ Qua",
+    "TUTORIAL_CONTINUE_BUTTON": "Tiếp tục",
+  
+    "TUTORIAL_SLIDE1_TITLE": "Chào Mừng Đến Với App Lazuda",
+    "TUTORIAL_SLIDE1_DESCRIPTION": "Là ứng dụng của đối tác <b>Vận Chuyển Hàng Hoá</b> và <b>Giao Hàng</b> cho Khách hàng trên Lazuda",
+  
+    "TUTORIAL_SLIDE2_TITLE": "Ứng dụng sử dụng một cách dễ dàng",
+    "TUTORIAL_SLIDE2_DESCRIPTION": "Các công ty chuyển phát nhanh quốc tế sẽ thực hiện các công việc tiếp nhận, thu gom và sắp xếp bưu phẩm để chuyển các bưu phẩm đó ra nước ngoài.",
+  
+    "TUTORIAL_SLIDE3_TITLE": "Tiếp nhận đơn hàng và giao hàng tận nơi",
+    "TUTORIAL_SLIDE3_DESCRIPTION": "Nhân viên của Lazuda đến tận nơi khách hàng yêu cầu để nhận hàng và chuyển hàng đi .Mang đến Khách hàng",
+  
+    "TUTORIAL_SLIDE4_TITLE": "Bắt đầu",
+  
+    "WELCOME_INTRO": "TÀI KHOẢN",
+  
+    "SETTINGS_TITLE": "Giao Hàng",
+    "SETTINGS_OPTION1": "Option 1",
+    "SETTINGS_OPTION2": "Option 2",
+    "SETTINGS_OPTION3": "Option 3",
+    "SETTINGS_OPTION4": "Option 4",
+  
+    "SETTINGS_PROFILE_BUTTON": "Edit Profile",
+  
+    "SETTINGS_PAGE_PROFILE": "Edit Profile",
+  
+    "WELCOME_TITLE": "Welcome",
+  
+    "LOGIN_TITLE": "Tài khoản",
+    "LOGIN_ERROR": "Đăng Nhập Thành Công",
+    "LOGIN_BUTTON": "Đăng nhập",
+    "SIGNUP_TITLE": "Sign up",
+    "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
+    "SIGNUP_BUTTON": "Sign up",
+  
+    "LIST_MASTER_TITLE": "Danh Sách Đơn Hàng",
+  
+    "ITEM_CREATE_TITLE": "New Item",
+    "ITEM_CREATE_CHOOSE_IMAGE": "Add Image",
+  
+    "ITEM_NAME_PLACEHOLDER": "Name",
+    "ITEM_ABOUT_PLACEHOLDER": "About",
+  
+    "DONE_BUTTON": "Done",
+    "CANCEL_BUTTON": "Cancel",
+    "DELETE_BUTTON": "Delete",
+  
+    "CARDS_TITLE": "Social",
+  
+    "SEARCH_TITLE": "Vận Chuyển Đơn",
+    "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\""
+  }
