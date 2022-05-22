@@ -2,7 +2,7 @@ const PayMentModel = require("../../models/payment.model");
 const nodeMailer = require("nodemailer");
 const IpAddress = require("../../models/ipaddress");
 
-var ip = new IpAddress().getIp()["Ethernet"][0];
+var ip = new IpAddress().getIp()["Wi-Fi"][0];
 
 var thongtin = {
     user: { id: '' },
@@ -36,7 +36,7 @@ class PaymentController {
         var orderId = dateFormat(date, 'HHmmss');
         var body = req.body
         var amountOrder = body.amount
-        var orderDescriptionOrder = 'Thanh Toan Don Dat Hang Tai Shendu : ' + body.orderDescription.toString()
+        var orderDescriptionOrder = 'Thanh Toan Don Dat Hang Tai Lazuda : ' + body.orderDescription.toString()
         var thongtinS = body.thongtin
         thongtinS.ngayOrder = body.orderDescription.toString()
 
@@ -237,8 +237,8 @@ class PaymentController {
         const mailoptions = {
                 from: adminEmail, // địa chỉ admin email bạn dùng để gửi
                 to: "kiethao112@gmail.com", // địa chỉ gửi đến
-                subject: "Thông Tin Đặt Hàng Từ Shendu", // Tiêu đề của mail
-                html: `<h1>Đặt hàng thành công</h1><br/><h2>shendu</h2>` // Phần nội dung mail mình sẽ dùng html thay vì thuần văn bản thông thường.
+                subject: "Thông Tin Đặt Hàng Từ Lazuda", // Tiêu đề của mail
+                html: `<h1>Đặt hàng thành công</h1><br/><h2>Lazuda</h2>` // Phần nội dung mail mình sẽ dùng html thay vì thuần văn bản thông thường.
             }
             // hàm transporter.sendMail() này sẽ trả về cho chúng ta một Promise
         transporter.sendMail(mailoptions, function(error, info) {

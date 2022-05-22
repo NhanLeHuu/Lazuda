@@ -43,10 +43,10 @@ socket.web(io);
 module.exports = io
 
 const ipAddress = new IpAddress()
-var ip = ipAddress.getIp()["Ethernet"][0]
+var ip = ipAddress.getIp()["Wi-Fi"][0]
 ipAddress.configFile(ip)
 
 ConnectDB.onConnect();
 http.listen(5000, ip, () => {
-    console.log("Server Shendu đã bắt đầu: " + ip + ":5000");
+    console.log("Server Lazuda đang khởi động: " + ip + ":5000");
 });
