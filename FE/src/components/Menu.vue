@@ -4,7 +4,7 @@
       <!-- Start Banner -->
       <el-col :span="24">
         <el-carousel class="banner" height="420px">
-          <el-carousel-item v-for="(item, index) in 10" :key="index">
+          <el-carousel-item v-for="(item, index) in 8" :key="index">
             <img :src="require(`../assets/banners/banner${item}.jpg`)" />
           </el-carousel-item>
         </el-carousel>

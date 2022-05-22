@@ -5,6 +5,7 @@ const readline = require('readline');
 class IpAddress {
     getIp() {
         const { networkInterfaces } = require('os');
+
         const nets = networkInterfaces();
         const results = Object.create(null); // Or just '{}', an empty object
 
@@ -19,6 +20,7 @@ class IpAddress {
                 }
             }
         }
+        // this.configFile()
         return results;
     }
 
@@ -55,6 +57,7 @@ class IpAddress {
                     return console.log(err);
                 }
                 console.log("Fixed App Name Server Api");
+                console.log("Server Lazuda đã bắt đầu: " + ipAddress + ":5000");
             })
         })
 

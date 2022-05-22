@@ -17,7 +17,7 @@ const Router = express.Router();
 // Comic
 Router.post("/getallcomic", new CrawlerComic().getComicHome.bind(new CrawlerComic()))
 Router.post("/getsummarycomic", new CrawlerComic().getSummaryComic.bind(new CrawlerComic()))
-// Router.post("/getreadingcomic", new CrawlerComic().getReadingComic.bind(new CrawlerComic()))
+Router.post("/getreadingcomic", new CrawlerComic().getReadingComic.bind(new CrawlerComic()))
 // Router.post("/getsearchcomic", new CrawlerComic().getSearchComic.bind(new CrawlerComic()));
 // Film
 // Router.post("/getallfilm", new CrawlerFilm().getFilmHome.bind(new CrawlerFilm()))

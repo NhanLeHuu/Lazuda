@@ -183,13 +183,13 @@ class CrawlerComic {
                 .end()
                 .then(response => {
                     const $ = cheerio.load(response)
-                    var prechapter = $(".link-prev-chap").attr('href')
-                    var nextchapter = $(".link-next-chap").attr('href')
-                    var title = $(".detail-title").text()
-                    var chapter = $(".detail-title").text()
+                    var prechapter = $("#prev_chap").attr('href')
+                    var nextchapter = $("#next_chap").attr('href')
+                    var title = $(".title-detail-left").text()
+                    var chapter = $("#chapter").find("option:selected").text()
                     var reading = []
-                    $(".container.gallery").find("img").each(async (i, element) => {
-                        var srcimg = $(element).attr("data-src")
+                    $(".readimg").find("img").each(async (i, element) => {
+                        var srcimg = $(element).attr("src")
                         reading.push(srcimg)
                     })
                     readingcomic = {
@@ -197,7 +197,7 @@ class CrawlerComic {
                         prechapter,
                         nextchapter,
                         title,
-                        chapter
+                        chapter,
                     }
                     res.status(200).json({
                         status: 200,
@@ -236,7 +236,7 @@ class CrawlerComic {
                     var mota = $(".detail-content").find('p').text()
                     var chuong = []
                     $(".list-chapter").find('.row').each((i, element) => {
-                        if(i === 1) return
+                        if (i === 1) return
                         var sochuong = $(element).find("a").text()
                         var href = $(element).find("a").attr("href")
                         var ngaygio = $(element).find(".small").text()
